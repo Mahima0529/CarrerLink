@@ -38,7 +38,7 @@ export const register = catchAsyncErrors(async (req, res, next) => {
       address,
       password,
       role,
-      jobcategories: {
+      niches: {
         firstNiche,
         secondNiche,
         thirdNiche,
@@ -134,13 +134,13 @@ export const updateProfile = catchAsyncErrors(async (req, res, next) => {
     phone: req.body.phone,
     address: req.body.address,
     coverLetter: req.body.coverLetter,
-    jobcategories: {
+    niches: {
       firstNiche: req.body.firstNiche,
       secondNiche: req.body.secondNiche,
       thirdNiche: req.body.thirdNiche,
     },
   };
-  const { firstNiche, secondNiche, thirdNiche } = newUserData.jobcategories;
+  const { firstNiche, secondNiche, thirdNiche } = newUserData.niches;
 
   if (
     req.user.role === "Job Seeker" &&

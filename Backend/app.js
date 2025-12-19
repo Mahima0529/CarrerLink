@@ -9,7 +9,7 @@ import { errorMiddleware } from "./middlewares/error.js";
  import userRouter from "./routes/userRouter.js";
  import jobRouter from "./routes/jobRouter.js";
 import applicationRouter from "./routes/applicationRouter.js";
-// import { newsLetterCron } from "./automation/newsLetterCron.js";
+ import { newsLetterCron } from "./automation/newsLetterCron.js";
 
 
 const app = express();
@@ -42,7 +42,7 @@ app.use((req, res, next) => {
  app.use("/api/v1/job", jobRouter);
  app.use("/api/v1/application", applicationRouter);
 
-// newsLetterCron()
+ newsLetterCron()
 connection();
 app.use(errorMiddleware);
 
