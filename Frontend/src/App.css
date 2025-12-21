@@ -98,6 +98,7 @@ input::-webkit-outer-spin-button {
 .navbar .logo img {
   width: 120px;
 }
+ 
 .navbar .links {
   display: flex;
   justify-content: space-between;
@@ -259,9 +260,20 @@ footer div {
 }
 footer div:first-child {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+   /* center vertically */
+  align-items: center; 
+  /* center horizontally */
+
+  
 }
+
+.footer-logo-text {
+  color: #ebeb3e !important;
+  font-weight: 700;
+  font-size: 22px;
+}
+
 footer div img {
   width: 200px;
 }
