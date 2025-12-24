@@ -65,9 +65,9 @@ It provides job postings, search & filter functionality, application tracking, a
 📦 Steps:  
 git clone https://github.com/Mahima0529/CarrerLink   
 cd job-portal-with-automation  
-cd back && npm install  
+cd backend && npm install  
 cd ../frontend && npm install      
-cd back && npm start  
+cd backend && npm start  
 cd ../frontend && npm start  
 
 📖 Usage  
