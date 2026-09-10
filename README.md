@@ -53,7 +53,7 @@ It provides job postings, search & filter functionality, application tracking, a
 ⏰ Cron Jobs (Automation)  
 
 🌐 Live Project  
-🔗 https://carrer-link.vercel.app/     
+🔗 https://career-link-mahifoundation.netlify.app/     
 
 🛠️ Installation & Setup  
 
